@@ -4,14 +4,14 @@ RSpec.describe 'integration tests:' do
       include Wisper::Publisher
 
       def run
-        broadcast(:it_happened, 'hello, world')
+        broadcast(:it_happened, 'foo', foo: "bar", foz: "baz")
       end
     end.new
   end
 
   let(:subscriber) do
     Class.new do
-      def self.it_happened
+      def self.it_happened(arg1, *args, foo:)
         # noop
       end
     end

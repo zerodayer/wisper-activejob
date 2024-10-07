@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = "Provides Wisper with asynchronous event publishing using ActiveJob"
   spec.homepage      = "https://github.com/krisleech/wisper-activejob"
 
-  spec.required_ruby_version = '>= 1.9.3'
+  spec.required_ruby_version = '>= 2.7'
 
   spec.license       = "MIT"
 
